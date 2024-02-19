@@ -1,0 +1,29 @@
+header {
+	padding: 0.5rem;
+	border-radius: 1rem;
+	border: 1px solid black;
+}
+
+header,
+header nav ul {
+	gap: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header ul {
+	list-style-type: none;
+}
+
+#profilePicContainer img {
+	width: 50px;
+	height: auto;
+}
+
+#logoContainer {
+	display: flex;
+	padding: 0.5rem;
+	align-items: center;
+	justify-content: center;
+}
