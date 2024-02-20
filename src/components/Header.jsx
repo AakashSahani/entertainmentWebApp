@@ -1,39 +1,50 @@
 import './Header.css';
 import logo from '../assets/logo.svg';
-import userProfile from '../assets/image-avatar.png';
+import { Link } from 'react-router-dom';
 import navHome from '../assets/icon-nav-home.svg';
+import userProfile from '../assets/image-avatar.png';
 import navMovies from '../assets/icon-nav-movies.svg';
-import navTVseries from '../assets/icon-nav-tv-series.svg';
 import navBookmark from '../assets/icon-nav-bookmark.svg';
+import navTVseries from '../assets/icon-nav-tv-series.svg';
 
 function Header() {
 	return (
 		<header>
 			{/* Logo */}
 			<div id="logoContainer">
-				<img src={logo} alt="Entertainment App Logo" />
+				<Link to="/">
+					<img src={logo} alt="Entertainment App Logo" />
+				</Link>
 			</div>
 			{/* Navigation */}
 			<nav>
 				<ul>
 					<li>
 						<button type="button">
-							<img src={navHome} alt="Navigate to Home page" />
+							<Link to="/">
+								<img src={navHome} alt="Navigate to Home page" />
+							</Link>
 						</button>
 					</li>
 					<li>
 						<button type="button">
-							<img src={navMovies} alt="Navigate to Movies page" />
+							<Link to="/movies">
+								<img src={navMovies} alt="Navigate to Movies page" />
+							</Link>
 						</button>
 					</li>
 					<li>
 						<button type="button">
-							<img src={navTVseries} alt="Navigate to TV series page" />
+							<Link to="/tvseries">
+								<img src={navTVseries} alt="Navigate to TV series page" />
+							</Link>
 						</button>
 					</li>
 					<li>
 						<button type="button">
-							<img src={navBookmark} alt="Navigate to Bookmark page" />
+							<Link to="/bookmarks">
+								<img src={navBookmark} alt="Navigate to Bookmark page" />
+							</Link>
 						</button>
 					</li>
 				</ul>
@@ -41,7 +52,9 @@ function Header() {
 			{/* User Profile */}
 			<div id="profilePicContainer">
 				<button type="submit">
-					<img src={userProfile} alt="User Profile" />
+					<Link to="/login">
+						<img src={userProfile} alt="User Profile" />
+					</Link>
 				</button>
 			</div>
 		</header>

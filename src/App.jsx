@@ -1,17 +1,15 @@
 import './App.css';
 import Header from './components/Header';
-import Login from './pages/Login';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './components/Home';
+import MovieCard from './components/MovieCard';
+import Search from './components/Search';
 
 function App() {
 	return (
 		<>
 			<Header />
-			<p>Hello World</p>
-			{/* 
-			<Router>
-				<Route path="/login" Component={Login} />
-			</Router> */}
+			<Search />
+			<Home />
 		</>
 	);
 }

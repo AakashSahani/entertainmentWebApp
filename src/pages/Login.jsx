@@ -1,11 +1,14 @@
 import logo from '../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 function Login() {
 	return (
 		<>
 			<header>
 				<div>
-					<img src="" alt="" />
+					<Link to="/">
+						<img src={logo} alt="Entertainment Logo" />
+					</Link>
 				</div>
 				<form>
 					<h1>Login</h1>
@@ -30,7 +33,10 @@ function Login() {
 					<input type="button" value="Login to your account" />
 					<div>
 						<span>
-							Dont have an account? <a href="#">Sign Up</a>
+							Dont have an account?{' '}
+							<Link to="/signup">
+								<span>Sign Up</span>
+							</Link>
 						</span>
 					</div>
 				</form>

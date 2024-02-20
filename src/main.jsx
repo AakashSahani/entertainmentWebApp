@@ -29,7 +29,7 @@ const router = createBrowserRouter([
 		element: <Movies />,
 	},
 	{
-		path: '/TV_Series',
+		path: '/tvseries',
 		element: <TvSeries />,
 	},
 	{

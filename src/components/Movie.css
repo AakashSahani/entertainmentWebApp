@@ -1,0 +1,14 @@
+.movieCard {
+	width: 300px;
+	display: flex;
+	height: 150px;
+	/* color: white; */
+	border-radius: 1rem;
+	flex-direction: row;
+	align-items: flex-end;
+	border: 1px solid black;
+	justify-content: space-evenly;
+	/* background-size: cover;
+	background: url('../assets/thumbnails/112/regular/medium.jpg') no-repeat
+		center; */
+}
