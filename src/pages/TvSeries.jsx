@@ -19,6 +19,7 @@ function TvSeries() {
 								rating={movie.rating}
 								year={movie.year}
 								category={movie.category}
+								bgImage={movie.thumbnail.regular.large}
 								key={index}
 							/>
 						)

@@ -1,10 +1,13 @@
 import './Movie.css';
+// import bgImage from '../assets/thumbnails/112/regular/large.jpg';
 
 function MovieCard(props) {
 	return (
 		<div
 			className="movieCard"
-			// style={{ background: `${props.thumbnail.regular.medium}` }}
+			style={{
+				backgroundImage: `url(${props.bgImage})`,
+			}}
 		>
 			<p>{props.title}</p>
 			<p>{props.rating}</p>

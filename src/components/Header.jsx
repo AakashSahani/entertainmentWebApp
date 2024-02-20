@@ -20,42 +20,42 @@ function Header() {
 			<nav>
 				<ul>
 					<li>
-						<button type="button">
-							<Link to="/">
+						<Link to="/">
+							<button type="button">
 								<img src={navHome} alt="Navigate to Home page" />
-							</Link>
-						</button>
+							</button>
+						</Link>
 					</li>
 					<li>
-						<button type="button">
-							<Link to="/movies">
+						<Link to="/movies">
+							<button type="button">
 								<img src={navMovies} alt="Navigate to Movies page" />
-							</Link>
-						</button>
+							</button>
+						</Link>
 					</li>
 					<li>
-						<button type="button">
-							<Link to="/tvseries">
+						<Link to="/tvseries">
+							<button type="button">
 								<img src={navTVseries} alt="Navigate to TV series page" />
-							</Link>
-						</button>
+							</button>
+						</Link>
 					</li>
 					<li>
-						<button type="button">
-							<Link to="/bookmarks">
+						<Link to="/bookmarks">
+							<button type="button">
 								<img src={navBookmark} alt="Navigate to Bookmark page" />
-							</Link>
-						</button>
+							</button>
+						</Link>
 					</li>
 				</ul>
 			</nav>
 			{/* User Profile */}
 			<div id="profilePicContainer">
-				<button type="submit">
-					<Link to="/login">
+				<Link to="/login">
+					<button type="submit">
 						<img src={userProfile} alt="User Profile" />
-					</Link>
-				</button>
+					</button>
+				</Link>
 			</div>
 		</header>
 	);

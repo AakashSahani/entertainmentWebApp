@@ -3,11 +3,14 @@ section {
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
+	padding: 1rem;
 }
 
 .trending {
 	width: 100vw;
 	flex-wrap: nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
 	overflow: scroll;
 	flex-direction: row;
 }

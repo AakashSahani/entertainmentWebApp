@@ -10,6 +10,7 @@ function Movies() {
 		<>
 			<Header />
 			<Search />
+			<h1>Movies</h1>
 			<div>
 				{movie.map(
 					(movie, index) =>
@@ -19,6 +20,7 @@ function Movies() {
 								rating={movie.rating}
 								year={movie.year}
 								category={movie.category}
+								bgImage={movie.thumbnail.regular.large}
 								key={index}
 							/>
 						)
