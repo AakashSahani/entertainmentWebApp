@@ -1,11 +1,14 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Home.css';
 import data from '../data/data.json';
 import MovieCard from './MovieCard';
 
 function Home() {
 	const [movies, setMovies] = useState(data);
-
+	useEffect(() => {
+		let size = Window.innerWidth;
+		console.log(size);
+	});
 	return (
 		<>
 			{/* Trending Section */}
@@ -18,7 +21,7 @@ function Home() {
 								rating={movie.rating}
 								year={movie.year}
 								category={movie.category}
-								bgImage={movie.thumbnail.trending.large}
+								bgImage={movie.thumbnail.trending.small}
 								key={index}
 							/>
 						)
@@ -36,7 +39,7 @@ function Home() {
 								rating={movie.rating}
 								year={movie.year}
 								category={movie.category}
-								bgImage={movie.thumbnail.regular.medium}
+								bgImage={movie.thumbnail.regular.small}
 								key={index}
 							/>
 						)

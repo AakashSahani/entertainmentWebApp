@@ -7,12 +7,14 @@ section {
 }
 
 .trending {
-	width: 100vw;
-	height: fit-content;
-	flex-wrap: nowrap;
+	display: flex;
 	flex-direction: row;
-	height: fit-content;
+	flex-wrap: nowrap;
 	overflow-x: auto;
+}
+
+.trending > * {
+	flex-shrink: 0;
 }
 
 .recommended {

@@ -1,7 +1,7 @@
 .movieCard {
 	display: flex;
 	position: relative;
-	width: 300px;
+	width: fit-content;
 	height: fit-content;
 	border-radius: 1rem;
 	color: white;
