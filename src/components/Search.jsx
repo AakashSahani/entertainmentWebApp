@@ -5,14 +5,15 @@ import data from '../data/data.json';
 function Search() {
 	const [movie, setMovie] = useState(data);
 
-	const handleSearch = (formData) => {
-		const query = formData.get('search');
-		alert(`You search for ${query}`);
+	const handleSearch = (e) => {
+		e.preventDefault();
+		const search = e.currentTarget.value;
+		alert(search);
 	};
 
 	return (
 		<>
-			<form action={handleSearch}>
+			<form onSubmit={(e) => handleSearch(e)}>
 				<label htmlFor="searchBar">Search for movies or TV series</label>
 				<input
 					name="search"

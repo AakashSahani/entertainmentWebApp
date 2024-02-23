@@ -18,7 +18,7 @@ function Home() {
 								rating={movie.rating}
 								year={movie.year}
 								category={movie.category}
-								bgImage={movie.thumbnail.regular.large}
+								bgImage={movie.thumbnail.trending.large}
 								key={index}
 							/>
 						)
@@ -36,7 +36,7 @@ function Home() {
 								rating={movie.rating}
 								year={movie.year}
 								category={movie.category}
-								bgImage={movie.thumbnail.regular.large}
+								bgImage={movie.thumbnail.regular.medium}
 								key={index}
 							/>
 						)
